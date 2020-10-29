@@ -1,0 +1,64 @@
+
+
+*
+{
+    color: #371D10;
+    background-color:#ecf2ff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+h1, h2
+{
+    text-align: left;
+    margin-top: -20px;
+    font-size: 250%;
+}
+
+hr 
+{
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: #371D10; 
+}
+
+div.selfie
+{
+    position: absolute;
+    top: 34px;
+    left: 280px;
+    width: 100px;
+    height: 100px;
+}
+.center
+{
+    text-align: left;
+    margin-top:-25px;
+    font-size: 120%;
+}
+
+.right
+{
+    float:right;
+}
+
+.left
+{
+    float:left;
+}
+
+ul.a
+{
+    list-style-type: square;
+}
+
+.marg
+{
+    margin-left: 480px;
+    margin-right: 480px;
+}
