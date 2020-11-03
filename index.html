@@ -1,76 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-        <meta charset="utf-8">
-        <meta name="author" content="Andy Seo">
-        <meta name="description" content="Professional Resume for Andy Seo written in HTML+CSS format">
-        <title>home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body>
-    <div class=marg>
-        <br><br>
-        <h1>Andy Seo</h1>
-        <div class=center>
-            <p>Orlando, FL · andyseo414@gmail.com · (407) 797 - 0919 · <a href="https://www.linkedin.com/in/andy-seo-506a301a7/">Linkedin</a>     </p>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Andy Seo</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div id="CounterVisitor">
         </div>
+        
+        <script>
+        var n = localStorage.getItem('on_load_counter');
+        
+        if (n === null) 
+        {
+          n = 0;
+        }
+        n++;
+        
+        localStorage.setItem("on_load_counter", n);
+        
+        nums = n.toString().split('').map(Number);
+        document.getElementById('CounterVisitor').innerHTML = '';
+        for (var i of nums) {
+          document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+        }
+        
+        </script>
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Andy
+                        <span class="text-primary">Seo</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                         Orlando, FL · (407) 797-0919 ·
+                        <a href="mailto:name@email.com">andyseo414@gmail.com</a>
+                    </div>
 
-        <div class=selfie>
-            <img src="m3.png" alt="myself">
+                    <p class="lead mb-5">Current student building career in IT related field with focus in DevOps, Cloud, and System Adminstration. Enterprise knowledge in Cloud/Hybrid/On-prem infrastructure and Microsoft Stack. Strong interpersonal background reinforced in customer-service and IT experience. Motivated learner and constant adapter to new technology.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/andy-seo-506a301a7/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/kyomi44"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Help Desk (FT)</h3>
+                            <div class="subheading mb-3">Tavistock Group</div>
+                            <ul class="a">
+                                <li>Utilized ManageEngine ServiceDesk+ ITSM to automate ticketing process with custom-built python scripts for 50% better effciency as well as providing end-user support.</li>
+                                <li>Implemented ManageEngine Desktop Central for pushing software updates and inventory management.</li>
+                                <li>Participated in migrations for Office 365 moving from hosted exchange servers to on-prem involving company mergers and acquisition.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2020 - Ongoing</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Trainer/Lead (Temp)</h3>
+                            <div class="subheading mb-3">Tyme Global / Salesforce</div>
+                            <ul class="a">
+                                <li>Employ Salesforce CRM software in developing SaferFL Hurricane Shelter platform with proper workflow.</li>
+                                <li>Function as an escalation advisor for agents during live production and present solutions.</li>
+                                <li>Train technical agents in familiarizing developed interface and application utilization through Sandbox environment preparing for live deployment.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2020 - October 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Technical Support Agent (CT)</h3>
+                            <div class="subheading mb-3">Keywords Studios / Riot Games</div>
+                            <ul class="a">
+                                <li>Employ Jira workflow to test validity of client's concerns and relay information to Dev team regarding solutions, bug reports, and improvements.</li>
+                                <li>Management of Zendesk ticketing system for active end-user support cases as well as building solutions library.</li>
+                                <li>Usage of advanced Slack application functions for intercommunication between departments regarding communication and collaboration.</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2020 - August 2020</span></div>
+                    </div>
+                    <!-- 
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Web Design Intern</h3>
+                            <div class="subheading mb-3">Shout! Media Productions</div>
+                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                    </div>
+                    -->>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education & Certificates</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Central Florida</h3>
+                            <div class="subheading mb-3">Bachelor of Science</div>
+                            <div>Computer Science</div>
+                            <p>GPA: 3.0</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2017 - Anticipated December 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Central Florida</h3>
+                            <div class="subheading mb-3">Associate degree</div>
+                            <div>Computer Science</div>
+                            <p>GPA: 3.0</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2017 - December 2019</span></div>
+                    </div>
+                    <br>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Microsoft AZ-900</h3>
+                            <div class="subheading mb-3">AZ-900: Microsoft Azure Fundamentals</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Oct 2020 - No current expiration date</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <p>Java (Proficient), C (Proficient), C++(Proficient), HTML/JS (Proficient), Python (Proficient), Go (Mild)</p>
+                    <div class="subheading mb-3">Operating Systems</div>
+                    <p>Windows (Vista, XP, 7, 10), Linux(Ubuntu, CentOS), Unix(OpenBSD, FreeBSD), MacOS/iOS, Android</p>
+                    <div class="subheading mb-3">Relevant Skills / Tools</div>
+                    <p>Git/GitLabCI/Actions (CI/CD), Containers(Docker), Config(Ansible), Orchestration(Kubernetes), Provisioning(Terraform)</p>
+                    <p>Microsoft stack (Office, Teams, Azure), AWS, Active Directory, Powershell, Bash, General Hardware/Network Knowledge</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from working in technology, I enjoy most of my time being outdoors. As a caffeine fanatic, I love exploring local coffee shops and trying out their offerings(Connect with me for local Orlando recommendations!). Aside from my caffeine journeys I was an avid concert attender pre-covid!</p>
+                    <p class="mb-0">When forced indoors, I like to code, watch films, and discover music! I spend a large amount of my free time exploring the latest technology advancements in Cloud and Devops technologies.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Blog</h2>
+                    <p>~Documentation in progess~</p>
+                </div>
+            </section>
         </div>
-
-        <h3>Professional Summary</h3>
-        <hr />
-        <p><b>Student building career in IT related field with focus in DevOps, Cloud, and System Adminstration. Enterprise knowledge in Cloud/Hybrid/On-prem infrastructure and Microsoft Stack. Strong interpersonal background reinforced in customer-service and IT experience. Motivated learner and constant adapter to new technology.</b></p>
-        
-        <h3>Education & Certificates</h3>
-        <hr />
-        <p><b>University of Central Florida</b><span class="right">Orlando, FL</span>
-            <br>BS Computer Science GPA: 3.0 <span class="right"> Aug 2017 - Anticipated Dec 2021</span></p>
-            <p>Associates Computer Science <span class="right"> Aug 2017 - Aug 2019</span></p>
-        <p><b>Certification: Azure-900 Microsoft</b> 
-            <br>AZ-900: Microsoft Azure Fundamentals <span class="right"> Oct 2020 - No current expiration date</span></p>
-
-        <h3>Experience</h3>
-        <hr />
-        <p><b>Tavistock Group</b><span class="right">Windermere, FL</span>
-            <br><i>Help Desk (FT)</i><span class="right">September 2020 - Ongoing</span>
-            <br><ul class="a">
-                <li>Utilized ManageEngine ServiceDesk+ ITSM to automate ticketing process with custom-built python scripts for 50% better effciency as well as providing end-user support.</li>
-                <li>Implemented ManageEngine Desktop Central for pushing software updates and inventory management.</li>
-                <li>Participated in migrations for Office 365 involving company mergers and acquisition.</li>
-            </ul>
-        <b>Tyme Global / Salesforce</b><span class="right">Orlando, FL (Remote)</span>
-            <br><i>Trainer/Lead (Temp)</i><span class="right">August 2020 - October 2020</span>
-            <br><ul class="a">
-                <li>Employ Salesforce CRM software in developing SaferFL Hurricane Shelter platform with proper workflow.</li>
-                <li>Function as an escalation advisor for agents during live production and present solutions.</li>
-                <li>Train technical agents in familiarizing developed interface and application utilization through Sandbox environment preparing for live deployment.</li>
-            </ul>
-        <b>Keywords Studios</b><span class="right">Redmond, WA (Remote)</span>
-            <br><i>Technical Support Agent (CT)</i><span class="right">May 2020 - August 2020</span>
-            <br><ul class="a">
-                <li>Employ Jira workflow to test validity of client's concerns and relay information to Dev team regarding solutions, bug reports, and improvements.</li>
-                <li>Management of Zendesk ticketing system for active end-user support cases as well as building solutions library.</li>
-                <li>Usage of advanced Slack application functions for intercommunication between departments regarding communication and collaboration.</li>
-            </ul></p>
-        
-        <h3>Skills</h3>
-        <hr />
-            <p><b>Operating Systems:</b><span class="right">Windows (Vista, XP, 7, 10), Linux(Ubuntu, CentOS), Unix(OpenBSD, FreeBSD), MacOS/iOS, Android</span>
-            <br><b>Languages:</b><span class="right">Java (Proficient), C (Proficient), C++(Proficient), HTML/JS (Proficient), Python (Proficient), Go (Mild)</span>
-            <br><b>Relevant Skills:</b><span class="right">Microsoft stack (Office, Teams, Azure), Active Directory, Powershell, Bash, Hardware/Network Knowledge</span>
-            <br><b>Skills (Cont.):</b><span class="right">Git (GitLabCI), Containers(Docker), Config(Ansible), Orchestration(Kubernetes), Provisioning(Terraform)</span></p>
-        
-        <h3>Relevant Course Work</h3>
-        <hr />
-        <p><b>Computer Science I
-        <br>Computer Science II
-        <br>Object Oriented Programming
-        <br>Datebase Management Systems SQL
-        </b></p>
-    </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
